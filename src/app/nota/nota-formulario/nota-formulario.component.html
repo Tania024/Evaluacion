@@ -1,0 +1,15 @@
+<p>nota-formulario works!</p>
+
+<div>
+    <label for="contenido">Contenido:</label>
+    <textarea id="contenido" [(ngModel)]="nuevaNota.contenido"></textarea>
+  
+    <label for="fecha">Fecha:</label>
+    <input type="text" id="fecha" [(ngModel)]="nuevaNota.fecha">
+  
+    <label for="etiquetas">Etiquetas:</label>
+    <input type="text" id="etiquetas" [(ngModel)]="nuevaNota.etiquetas">
+  
+    <button (click)="agregarNota()">Agregar Nota</button>
+  </div>
+  

@@ -1,0 +1,9 @@
+<p>nota works!</p>
+
+<ul>
+    <li *ngFor="let nota of nota">
+      {{ nota.contenido }} - {{ nota.fecha }} - {{ nota.etiquetas }}
+      <a [routerLink]="['/nota', nota.id]">Ver Detalles</a>
+    </li>
+  </ul>
+  
